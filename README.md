@@ -1,22 +1,35 @@
-# Repository template
-A template enabled repository, including all necessary files to open source.
-(create an issue with the following content if you want to track the repo configuration)
+## Flow Solidity Utilities
 
-## Repository settings and configuration
-- [ ]  Repository info
-    - [ ]  Add repo description
-    - [ ]  Update website to https://onflow.org
-    - [ ]  Add relevant repository topics (i.e. `blockchain` `onflow`, etc)
-    - [ ]  Check issue labels on `.github/labels.yml` and do any commit to main to get them synced
-- [ ]  Define merge workflow (create new branch protection rule)
-    - [ ]  `main` branch rule:
-        - [ ]  **Require pull request reviews before merging (2 approving reviews)**
-            - [ ]  **Require review from Code Owners**
-        - [ ]  **Require status checks to pass before merging**
-            - [ ]  **Require branches to be up to date before merging**
-        - [ ]  **Require linear history**
-        - [ ]   **Restrict who can push to matching branches**
-            - [ ]  Choose `onflow/flow` team
-- [ ]  Add necessary team members, adjust access levels
-    - [ ]  `onflow/flow-admin` ⇒ Admin access
-    - [ ]  `onflow/flow-engineering ` ⇒ Write access
+This repository contains a collection of Solidity contracts uniquely useful to building on EVM on Flow. You'll find
+libraries, interface and abstract contracts, as well as contract implementations you may find useful in your own
+projects.
+
+### Contracts
+
+* WFLOW - the equivalent of WETH on Ethereum, a wrapped version of FLOW token.
+  * Deployed to `0xd3bF53DAC106A0290B0483EcBC89d40FcC961f3e` on Flow [Testnet](https://evm-testnet.flowscan.io/token/0xd3bF53DAC106A0290B0483EcBC89d40FcC961f3e?tab=contract) & [Mainnet](https://evm.flowscan.io/token/0xd3bF53DAC106A0290B0483EcBC89d40FcC961f3e?tab=contract)
+* CadenceArchUtils - a library of utility functions for working with Cadence Arch precompiles.
+* CadenceRandomConsumer - a contract that assists in the implementation of secure onchain randomness, intended to make
+  the implementation of commit-reveal schemes easier to incorporate into your own projects.
+* Xorshift128plus - an example pseudo-random number generator contract, helping you generate unique random numbers from
+  onchain random sources.
+
+### Installation
+
+#### Foundry
+
+To install these contracts using Foundry, you can use the following command:
+
+```sh
+foundry install onflow/flow-sol-utils
+```
+
+#### Hardhat
+
+> :warning: **Note**: This package is not yet available on npm. This section will be updated when it is.
+
+To install these contracts using Hardhat, you can use the following command:
+
+```sh
+npm install @onflow/flow-sol-utils
+```
