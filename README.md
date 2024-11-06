@@ -7,6 +7,7 @@ projects.
 ### Contracts
 
 * WFLOW - the equivalent of WETH on Ethereum, a wrapped version of FLOW token.
+  * Deployed to `0xd3bF53DAC106A0290B0483EcBC89d40FcC961f3e` on Flow [Testnet](https://evm-testnet.flowscan.io/token/0xd3bF53DAC106A0290B0483EcBC89d40FcC961f3e?tab=contract) & [Mainnet](https://evm.flowscan.io/token/0xd3bF53DAC106A0290B0483EcBC89d40FcC961f3e?tab=contract)
 * CadenceArchUtils - a library of utility functions for working with Cadence Arch precompiles.
 * CadenceRandomConsumer - a contract that assists in the implementation of secure onchain randomness, intended to make
   the implementation of commit-reveal schemes easier to incorporate into your own projects.
