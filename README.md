@@ -1,66 +1,34 @@
-## Foundry
+## Flow Solidity Utilities
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This repository contains a collection of Solidity contracts uniquely useful to building on EVM on Flow. You'll find
+libraries, interface and abstract contracts, as well as contract implementations you may find useful in your own
+projects.
 
-Foundry consists of:
+### Contracts
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+* WFLOW - the equivalent of WETH on Ethereum, a wrapped version of FLOW token.
+* CadenceArchUtils - a library of utility functions for working with Cadence Arch precompiles.
+* CadenceRandomConsumer - a contract that assists in the implementation of secure onchain randomness, intended to make
+  the implementation of commit-reveal schemes easier to incorporate into your own projects.
+* Xorshift128plus - an example pseudo-random number generator contract, helping you generate unique random numbers from
+  onchain random sources.
 
-## Documentation
+### Installation
 
-https://book.getfoundry.sh/
+#### Foundry
 
-## Usage
+To install these contracts using Foundry, you can use the following command:
 
-### Build
-
-```shell
-$ forge build
+```sh
+foundry install onflow/flow-sol-utils
 ```
 
-### Test
+#### Hardhat
 
-```shell
-$ forge test
-```
+> :warning: **Note**: This package is not yet available on npm. This section will be updated when it is.
 
-### Format
+To install these contracts using Hardhat, you can use the following command:
 
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
+```sh
+npm install @onflow/flow-sol-utils
 ```
