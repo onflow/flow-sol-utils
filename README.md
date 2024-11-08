@@ -26,8 +26,6 @@ foundry install onflow/flow-sol-utils
 
 #### Hardhat
 
-> :warning: **Note**: This package is not yet available on npm. This section will be updated when it is.
-
 To install these contracts using Hardhat, you can use the following command:
 
 ```sh
