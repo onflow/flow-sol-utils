@@ -1,0 +1,23 @@
+{
+  "name": "@onflow/flow-sol-utils",
+  "version": "0.0.1",
+  "description": "Utility Solidity contracts for use on Flow EVM",
+  "files": [
+    "src/**/*.sol"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onflow/flow-sol-utils.git"
+  },
+  "keywords": [
+    "solidity",
+    "flow",
+    "smart",
+    "contracts"
+  ],
+  "author": "onflow",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/onflow/flow-sol-utils/issues"
+  }
+}
